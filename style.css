@@ -1,5 +1,7 @@
-img{
-  width: 500px;
-  height: auto;
-  align-content: center;
+body {
+    background-image: url("WhoseDeveloper.jpg");
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-attachment: fixed;
 }
+Try it Yourself »

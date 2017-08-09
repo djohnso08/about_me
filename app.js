@@ -39,9 +39,9 @@ console.log(occupation + 'was/was not a ninja or pirate.');
 if (occupation.toUpperCase() === 'YES' || occupation.toUpperCase() === 'Y'){
   alert('Arrrrrghhhhh! 0 points');
 } else if (occupation.toUpperCase() === 'NO' || occupation.toUpperCase() === 'N'){
-  alert('50 points! Now help me my find my eye patch!');
+  alert('50 points! Now help me find my eye patch!');
 } else {
-  alert('50 points! Now help me my find my eye patch!');
+  alert('50 points! Now help me find my eye patch!');
 }
 
 var terms = prompt('Have I ever clicked \"i agree\" on the terms and conditions, without reading it?');
@@ -49,7 +49,7 @@ console.log(terms + ' has/has\'nt licked \"i agree\" on the terms and conditions
 if
 (terms.toLowerCase() === 'yes' || 'y'){
   alert('');
-} else if (travel.toLowerCase() === 'no' || travel.toLowerCase() === 'n') { alert('Whaaaaaaaat! 0 points!');
+} else if (terms.toLowerCase() === 'no' || terms.toLowerCase() === 'n') { alert('Whaaaaaaaat! 0 points!');
 } else{
   alert('Whaaaaaaaat! 0 points!');
 }

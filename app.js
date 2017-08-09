@@ -41,15 +41,16 @@ if (occupation.toUpperCase() === 'YES' || occupation.toUpperCase() === 'Y'){
 } else if (occupation.toUpperCase() === 'NO' || occupation.toUpperCase() === 'N'){
   alert('50 points! Now help me find my eye patch!');
 } else {
-  alert('50 points! Now help me find my eye patch!');
+  alert('So Close!');
 }
 
 var terms = prompt('Have I ever clicked \"i agree\" on the terms and conditions, without reading it?');
-console.log(terms + ' has/has\'nt licked \"i agree\" on the terms and conditions, without reading it?');
+console.log(terms + ' has/has\'nt clicked \"i agree\" on the terms and conditions, without reading it?');
 if
 (terms.toLowerCase() === 'yes' || 'y'){
-  alert('');
-} else if (terms.toLowerCase() === 'no' || terms.toLowerCase() === 'n') { alert('Whaaaaaaaat! 0 points!');
+  alert('You know I have! Haven\'t you');
+} else if (terms.toLowerCase() === 'no' || terms.toLowerCase() === 'n'){
+  alert('I agreed anyway');
 } else{
-  alert('Whaaaaaaaat! 0 points!');
+  alert('');
 }

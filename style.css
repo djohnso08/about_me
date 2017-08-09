@@ -1,6 +1,8 @@
 body {
     background-image: url("assets/WhoseDeveloper.jpg");
     background-repeat: no-repeat;
-    background-position: right top;
+    background-position: center;
     background-attachment: fixed;
+    background-size: auto;
+    background-color: inherit;
 }

@@ -2,7 +2,7 @@
 
 alert('Welcome to Whose Developer is this Anyway? The guessing game where everything is made up and the points don\'t matter like the street signs to a cab driver!');
 
-var hometown = prompt('I am David Johnson and I am your host for today\'s show!\nYour first question to get to know me is did you know where I grew up?');
+var hometown = prompt('I am David Johnson and I am your host for today\'s show!\nYour first question to get to know me is do you know where I grew up?');
 console.log(name + ' conestant did/didn\'t know where David grew up.');
 
 if (hometown.toLowerCase() === 'yes' || hometown.toLowerCase() === 'y') {
@@ -10,7 +10,7 @@ if (hometown.toLowerCase() === 'yes' || hometown.toLowerCase() === 'y') {
 } else if (hometown.toLowerCase() === 'no' || hometown.toLowerCase() === 'n') {
   alert('Congratulations you recieve -1,000 points.');
 } else {
-  alert('Congratulations you recieve -1,000 points.');
+  alert('Your answer is like American Express: PRICELESS.');
 }
 
 var school = prompt('Has David attended all these schools?\nDiving\nFlight\nCoding\nFire Fighting');
@@ -18,9 +18,9 @@ console.log(school + ' contestant did/didn\'t know all the schools David attende
 if(school.toUpperCase() === 'YES' || school.toUpperCase() === 'Y'){
   alert('I like bunnies too! Congrats! 9,9999.2 points.');
 } else if (school.toUpperCase() === 'NO' || school.toUpperCase() === 'N') {
-  alert('I used apple maps to get here!');
+  alert('I would say NO if I was you too!');
 } else{
-  alert('I used apple maps to get here!');
+  alert('Can\'t get away with it that easy!');
 }
 
 var travel = prompt('Has David traveled to?\nDubai\nSingapore\nGreece\nMexico');
@@ -31,7 +31,7 @@ if
 } else if (travel.toLowerCase() === 'no' || travel.toLowerCase() === 'n') {
   alert('Whaaaaaaaat! 0 points!');
 } else{
-  alert('Whaaaaaaaat! 0 points!');
+  alert('Look were you found yourelf now!');
 }
 
 var occupation = prompt('Was I ever a ninja or a pirate?');
@@ -48,9 +48,9 @@ var terms = prompt('Have I ever clicked \"i agree\" on the terms and conditions,
 console.log(terms + ' has/has\'nt clicked \"i agree\" on the terms and conditions, without reading it?');
 if
 (terms.toLowerCase() === 'yes' || 'y'){
-  alert('You know I have! Haven\'t you');
+  alert('You know I have! Haven\'t you!');
 } else if (terms.toLowerCase() === 'no' || terms.toLowerCase() === 'n'){
-  alert('I agreed anyway');
+  alert('I agreed anyway!');
 } else{
   alert('');
 }

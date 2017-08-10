@@ -2,19 +2,23 @@
 
 alert('Welcome to the guessing game where everything is made up and the points don\'t matter like the street signs to a cab driver!');
 var correctanswer = 0;
+
 var name = prompt('What is your name contestant?');
 console.log(name);
 
-var backgroundpicture = prompt('Is the background picture me?');
-console.log(backgroundpicture);
-if (backgroundpicture.toLowerCase() === 'yes' || backgroundpicture.toLowerCase() === 'y') {
-  correctanswer++;
-  alert('Yes you are correct! Your points are like American Express: PRICELESS.');
-} else if (backgroundpicture.toLowerCase() === 'no' || backgroundpicture.toLowerCase() === 'n') {
-  alert('Congratulations you recieve -1,000 points.');
-} else {
-  alert('It\'s not to late to go back.');
+function backgroundpictureFunction() {
+  var backgroundpicture = prompt('Is the background picture me?');
+  console.log(backgroundpicture);
+  if (backgroundpicture.toLowerCase() === 'yes' || backgroundpicture.toLowerCase() === 'y') {
+    correctanswer++;
+    alert('Yes you are correct! Your points are like American Express: PRICELESS.');
+  } else if (backgroundpicture.toLowerCase() === 'no' || backgroundpicture.toLowerCase() === 'n') {
+    alert('Congratulations you recieve -1,000 points.');
+  } else {
+    alert('It\'s not to late to go back.');
+  }
 }
+backgroundpictureFunction();
 
 var school = prompt('Have I traveled to Dubai, Singapore, and Hawaii?');
 console.log(school);

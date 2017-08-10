@@ -34,17 +34,20 @@ function schoolFunction() {
 }
 schoolFunction();
 
-var climb = prompt('Have I climbed Mt. Rainer?');
-console.log(climb);
-if
-(climb.toLowerCase() === 'yes' || climb.toLowerCase() === 'y'){
-  correctanswer++;
-  alert('I must be the world\'s most interesting man, but no I have not climbed YET!');
-} else if (climb.toLowerCase() === 'no' || climb.toLowerCase() === 'n') {
-  alert('I used apple maps to get here! Congrats! 10,000 points.');
-} else{
-  alert('ERORR ERROR ERORR');
+function climbFunction() {
+  var climb = prompt('Have I climbed Mt. Rainer?');
+  console.log(climb);
+  if
+  (climb.toLowerCase() === 'yes' || climb.toLowerCase() === 'y'){
+    correctanswer++;
+    alert('I must be the world\'s most interesting man, but no I have not climbed YET!');
+  } else if (climb.toLowerCase() === 'no' || climb.toLowerCase() === 'n') {
+    alert('I used apple maps to get here! Congrats! 10,000 points.');
+  } else{
+    alert('ERORR ERROR ERORR');
+  }
 }
+climbFunction();
 
 var occupation = prompt('Did I go to school to become a Physician?');
 console.log(occupation);

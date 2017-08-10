@@ -63,16 +63,19 @@ function occupationFunction() {
 }
 occupationFunction();
 
-var terms = prompt('Have I ever clicked \"i agree\" on the terms and conditions, without reading it?');
-console.log(terms);
-if (terms.toLowerCase() === 'yes' || 'y'){
-  correctanswer++;
-  alert('Thank you for agreeing to the terms and conditions! 20,000 points');
-} else if (terms.toLowerCase() === 'no' || terms.toLowerCase() === 'n'){
-  alert('Who don\'t read them either huh!!');
-} else{
-  alert('I guess you enjoy reading them too!');
+function testFunction() {
+  var terms = prompt('Have I ever clicked \"i agree\" on the terms and conditions, without reading it?');
+  console.log(terms);
+  if (terms.toLowerCase() === 'yes' || 'y'){
+    correctanswer++;
+    alert('Thank you for agreeing to the terms and conditions! 20,000 points');
+  } else if (terms.toLowerCase() === 'no' || terms.toLowerCase() === 'n'){
+    alert('Who don\'t read them either huh!!');
+  } else{
+    alert('I guess you enjoy reading them too!');
+  }
 }
+testFunction();
 
 for (var i = 0; i < 4; i++) {
   var favoriteNumber = prompt('What is my favorite number?');

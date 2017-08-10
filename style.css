@@ -15,6 +15,14 @@
    background-size: contain;
 }
 
+/* GUESSING GAME */
+
+#guessing-game-html {
+  background-image: url("assets/diver.jpg");
+  background-repeat:round;
+   background-size: contain;
+}
+
 /* INDEX */
 
 

@@ -101,16 +101,14 @@ function stateLivedinQuestionFunction() {
   for (var i = 0; i < 6; i++) {
     var stateLivedinQuestion = prompt('Can you guess a state that I have lived in besides Washington?');
     console.log(stateLivedinQuestion);
-    if(stateLivedinQuestion.includes(statesLiveinArray)){
+    if(statesLiveinArray.includes(stateLivedinQuestion)){
       correctanswer++;
-      i = 7;
       alert('Correct!');
-    } else (stateLivedinQuestion != statesLiveinArray);
-    alert('Keep Trying!');
+      break;
+    } else {
+      alert('Keep Trying!');
+    }
   }
-
-  {
-    alert ('Congratulations ' + name + ' you got ' + correctanswer + ' of 7 right!');
-  }
+  alert ('Congratulations ' + name + ' you got ' + correctanswer + ' of 7 right!');
 }
 stateLivedinQuestionFunction();

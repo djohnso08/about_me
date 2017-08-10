@@ -11,8 +11,8 @@
 
 #resume-html {
   background-image: url("assets/seattle_skyline.jpg");
-  background-repeat: no-repeat;
-   background-size: auto;
+  background-repeat:round;
+   background-size: contain;
 }
 
 /* INDEX */

@@ -20,16 +20,19 @@ function backgroundpictureFunction() {
 }
 backgroundpictureFunction();
 
-var school = prompt('Have I traveled to Dubai, Singapore, and Hawaii?');
-console.log(school);
-if(school.toUpperCase() === 'YES' || school.toUpperCase() === 'Y'){
-  correctanswer++;
-  alert('So close, but I have traveled to Dubai and Singapore.');
-} else if (school.toUpperCase() === 'NO' || school.toUpperCase() === 'N') {
-  alert('You have been watching me haven\'t you!');
-} else{
-  alert('Can\'t get away that easy!');
+function schoolFunction() {
+  var school = prompt('Have I traveled to Dubai, Singapore, and Hawaii?');
+  console.log(school);
+  if(school.toUpperCase() === 'YES' || school.toUpperCase() === 'Y'){
+    correctanswer++;
+    alert('So close, but I have traveled to Dubai and Singapore.');
+  } else if (school.toUpperCase() === 'NO' || school.toUpperCase() === 'N') {
+    alert('You have been watching me haven\'t you!');
+  } else{
+    alert('Can\'t get away that easy!');
+  }
 }
+schoolFunction();
 
 var climb = prompt('Have I climbed Mt. Rainer?');
 console.log(climb);

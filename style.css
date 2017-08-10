@@ -11,8 +11,7 @@
 
 #resume-html {
   background-image: url("assets/seattle_skyline.jpg");
-  background-repeat:round;
-   background-size: contain;
+   background-size: cover;
 }
 
 /* GUESSING GAME */
@@ -28,16 +27,10 @@
 
 .main-picture {
   position: relative;
-/* left: 100%; */
-width: 30em;
-/* height: auto; */
-/* margin-top: 49.5em; */
-/* margin-left: 17.80em; */
-  }
+  width: 30em;
 
 .nav {
   position: fixed;
-    /* top: 75%; */
     left: 50%;
     width: 30em;
     height: 18em;

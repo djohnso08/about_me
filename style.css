@@ -19,22 +19,22 @@
 
 
 .main-picture {
-  position: fixed;
-      /* left: 100%; */
-      width: 30em;
-      /* height: auto; */
-      /* margin-top: 49.5em; */
-      margin-left: 17.80em;
+  position: relative;
+/* left: 100%; */
+width: 30em;
+/* height: auto; */
+/* margin-top: 49.5em; */
+/* margin-left: 17.80em; */
   }
 
 .nav {
-  position:fixed;
-      top: 75%;
-      left: 50%;
-      width:30em;
-      height:18em;
-      margin-top: -2em;
-      margin-left: -15em;
+  position: fixed;
+    /* top: 75%; */
+    left: 50%;
+    width: 30em;
+    height: 18em;
+    margin-top: auto;
+    margin-left: -15em;
 }
 .nav ul {
   list-style: none;

@@ -1,56 +1,73 @@
 'use strict';
 
-alert('Welcome to Whose Developer is this Anyway? The guessing game where everything is made up and the points don\'t matter like the street signs to a cab driver!');
+alert('Welcome to the guessing game where everything is made up and the points don\'t matter like the street signs to a cab driver!');
 
-var hometown = prompt('I am David Johnson and I am your host for today\'s show!\nYour first question to get to know me is do you know where I grew up?');
-console.log(hometown + ' the conestant did/didn\'t know where David grew up.');
+var backgroundpicture = prompt('Is the background picture me?');
+console.log(backgroundpicture);
 
-if (hometown.toLowerCase() === 'yes' || hometown.toLowerCase() === 'y') {
-  alert('100,000 points due to your amazing ability to improvise and guess correctly.');
-} else if (hometown.toLowerCase() === 'no' || hometown.toLowerCase() === 'n') {
+if (backgroundpicture.toLowerCase() === 'yes' || backgroundpicture.toLowerCase() === 'y') {
+  alert('Yes you are correct! Your points are like American Express: PRICELESS.');
+} else if (backgroundpicture.toLowerCase() === 'no' || backgroundpicture.toLowerCase() === 'n') {
   alert('Congratulations you recieve -1,000 points.');
 } else {
-  alert('Your answer is like American Express: PRICELESS.');
+  alert('It\'s not to late to go back.');
 }
 
-var school = prompt('Has David attended all these schools?\nDiving\nFlight\nCoding\nFire Fighting');
-console.log(school + ' the contestant did/didn\'t know all the schools David attended.');
+var school = prompt('Have I traveled to Dubai, Singapore, and Hawaii?');
+console.log(school);
 if(school.toUpperCase() === 'YES' || school.toUpperCase() === 'Y'){
-  alert('I like bunnies too! Congrats! 9,9999.2 points.');
+  alert('So close, but I have traveled to Dubai and Singapore.');
 } else if (school.toUpperCase() === 'NO' || school.toUpperCase() === 'N') {
-  alert('I would say NO if I was you too!');
+  alert('You have been watching me haven\'t you!');
 } else{
-  alert('Can\'t get away with it that easy!');
+  alert('Can\'t get away that easy!');
 }
 
-var travel = prompt('Has David traveled to\nDubai\nSingapore\nGreece\nMexico');
-console.log(travel + ' David traveled to\nDubai\nSingapore\nGreece\nMexico');
+var climb = prompt('Have I climbed Mt. Rainer?');
+console.log(climb);
 if
-(travel.toLowerCase() === 'yes' || travel.toLowerCase() === 'y'){
+(climb.toLowerCase() === 'yes' || climb.toLowerCase() === 'y'){
+  alert('I must be the world\'s most interesting man, but no I have not climbed YET!');
+} else if (climb.toLowerCase() === 'no' || climb.toLowerCase() === 'n') {
   alert('I used apple maps to get here! Congrats! 10,000 points.');
-} else if (travel.toLowerCase() === 'no' || travel.toLowerCase() === 'n') {
-  alert('Whaaaaaaaat! 0 points!');
 } else{
-  alert('Look were you found yourelf now!');
+  alert('ERORR ERROR ERORR');
 }
 
-var occupation = prompt('Was I ever a ninja or a pirate?');
-console.log(occupation + ' he was/was not a ninja or pirate.');
+var occupation = prompt('Did I go to school to become a Physician?');
+console.log(occupation);
 if (occupation.toUpperCase() === 'YES' || occupation.toUpperCase() === 'Y'){
-  alert('Arrrrrghhhhh! 0 points');
+  alert('I got your attention now didn\'t I! 35,000 points');
 } else if (occupation.toUpperCase() === 'NO' || occupation.toUpperCase() === 'N'){
-  alert('50 points! Now help me find my eye patch!');
+  alert('');
 } else {
-  alert('So Close!');
+  alert('What kind of answer was that?');
 }
 
 var terms = prompt('Have I ever clicked \"i agree\" on the terms and conditions, without reading it?');
-console.log(terms + ' he has/has\'nt clicked \"i agree\" on the terms and conditions, without reading it.');
-if
-(terms.toLowerCase() === 'yes' || 'y'){
-  alert('You know I have! Haven\'t you!');
+console.log(terms);
+if (terms.toLowerCase() === 'yes' || 'y'){
+  alert('Thank you for agreeing to the terms and conditions! 20,000 points');
 } else if (terms.toLowerCase() === 'no' || terms.toLowerCase() === 'n'){
-  alert('I agreed anyway!');
+  alert('Who don\'t read them either huh!!');
 } else{
-  alert('I guess you enjoy reading them too');
+  alert('I guess you enjoy reading them too!');
+}
+
+for (var i = 0; i < 4; i++) {
+  var favoriteNumber = prompt('What is my favorite number?');
+  if(parseInt(favoriteNumber) === 8){
+    i = 5;
+    alert('Correct');
+  } else if (parseInt(favoriteNumber) < 8){
+    alert('Too Low');
+  }else if (parseInt(favoriteNumber) > 8){
+    alert('Too High');
+  }else{
+    alert('Now this time use a number.');
+  }
+
+  for (var = 0; i < 4; i++) {
+    var statesLivein = prompt('Can you guess a state that I have lived in besides Washington?')
+  }
 }

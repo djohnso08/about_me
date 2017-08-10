@@ -1,8 +1,65 @@
-body {
-    background-image: url("assets/WhoseDeveloper.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-    background-size: auto;
-    background-color: inherit;
+/* RESUME */
+
+.resume-box {
+  background-color: #a0c9d0;
+  width: 60%;
+  margin: auto;
+  margin-top: 100px;
+  padding: 15px;
+  text-align: center;
+}
+
+#resume-html {
+  background-image: url("assets/seattle_skyline.jpg");
+  background-repeat: no-repeat;
+   background-size: auto;
+}
+
+/* INDEX */
+
+.main-picture {
+  position: fixed;
+  bottom: 45.5%;
+  background-size: 10%;
+}
+
+.nav {
+  position:fixed;
+      top: 75%;
+      left: 50%;
+      width:30em;
+      height:18em;
+      margin-top: -9em;
+      margin-left: -15em;
+}
+.nav ul {
+  list-style: none;
+  background-color: #444;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+.nav li {
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.2em;
+  line-height: 40px;
+  height: 40px;
+  border-bottom: 1px solid #888;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #fff;
+  display: block;
+  transition: .3s background-color;
+}
+
+.nav a:hover {
+  background-color: #005f5f;
+}
+
+.nav a.active {
+  background-color: #fff;
+  color: #444;
+  cursor: default;
 }

@@ -17,11 +17,15 @@
 
 /* INDEX */
 
+
 .main-picture {
   position: fixed;
-  bottom: 45.5%;
-  background-size: 10%;
-}
+      /* left: 100%; */
+      width: 30em;
+      /* height: auto; */
+      /* margin-top: 49.5em; */
+      margin-left: 17.80em;
+  }
 
 .nav {
   position:fixed;
@@ -29,7 +33,7 @@
       left: 50%;
       width:30em;
       height:18em;
-      margin-top: -9em;
+      margin-top: -2em;
       margin-left: -15em;
 }
 .nav ul {

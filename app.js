@@ -49,16 +49,19 @@ function climbFunction() {
 }
 climbFunction();
 
-var occupation = prompt('Did I go to school to become a Physician?');
-console.log(occupation);
-if (occupation.toUpperCase() === 'YES' || occupation.toUpperCase() === 'Y'){
-  correctanswer++;
-  alert('I got your attention now didn\'t I! 35,000 points');
-} else if (occupation.toUpperCase() === 'NO' || occupation.toUpperCase() === 'N'){
-  alert('');
-} else {
-  alert('What kind of answer was that?');
+function occupationFunction() {
+  var occupation = prompt('Did I go to school to become a Physician?');
+  console.log(occupation);
+  if (occupation.toUpperCase() === 'YES' || occupation.toUpperCase() === 'Y'){
+    correctanswer++;
+    alert('I got your attention now didn\'t I! 35,000 points');
+  } else if (occupation.toUpperCase() === 'NO' || occupation.toUpperCase() === 'N'){
+    alert('');
+  } else {
+    alert('What kind of answer was that?');
+  }
 }
+occupationFunction();
 
 var terms = prompt('Have I ever clicked \"i agree\" on the terms and conditions, without reading it?');
 console.log(terms);

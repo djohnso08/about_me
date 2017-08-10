@@ -66,8 +66,4 @@ for (var i = 0; i < 4; i++) {
   }else{
     alert('Now this time use a number.');
   }
-
-  for (var = 0; i < 4; i++) {
-    var statesLivein = prompt('Can you guess a state that I have lived in besides Washington?')
-  }
 }

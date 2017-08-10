@@ -77,21 +77,24 @@ function testFunction() {
 }
 testFunction();
 
-for (var i = 0; i < 4; i++) {
-  var favoriteNumber = prompt('What is my favorite number?');
-  console.log(favoriteNumber);
-  if(parseInt(favoriteNumber) === 8){
-    correctanswer++;
-    i = 5;
-    alert('Correct');
-  } else if (parseInt(favoriteNumber) < 8){
-    alert('Too Low');
-  }else if (parseInt(favoriteNumber) > 8){
-    alert('Too High');
-  }else{
-    alert('Now this time use a number.');
+function favoriteNumberFunction() {
+  for (var i = 0; i < 4; i++) {
+    var favoriteNumber = prompt('What is my favorite number?');
+    console.log(favoriteNumber);
+    if(parseInt(favoriteNumber) === 8){
+      correctanswer++;
+      i = 5;
+      alert('Correct');
+    } else if (parseInt(favoriteNumber) < 8){
+      alert('Too Low');
+    }else if (parseInt(favoriteNumber) > 8){
+      alert('Too High');
+    }else{
+      alert('Now this time use a number.');
+    }
   }
 }
+favoriteNumberFunction();
 
 var statesLiveinArray = ['Arizona','Oklahoma','Oregon','Tennessee','Kansas','Virginia'];
 for (var i = 0; i < 6; i++) {

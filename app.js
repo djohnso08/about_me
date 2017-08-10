@@ -56,6 +56,7 @@ if (terms.toLowerCase() === 'yes' || 'y'){
 
 for (var i = 0; i < 4; i++) {
   var favoriteNumber = prompt('What is my favorite number?');
+  console.log(favoriteNumber);
   if(parseInt(favoriteNumber) === 8){
     i = 5;
     alert('Correct');
@@ -65,5 +66,16 @@ for (var i = 0; i < 4; i++) {
     alert('Too High');
   }else{
     alert('Now this time use a number.');
+  }
+  var statesLiveinArray = ['Arizona','Oklahoma','Oregon','Tennessee','Kansas','Virginia'];
+  for (var i = 0; i < 6; i++) {
+    var stateLivedinQuestion = prompt('Can you guess a state that I have lived in besides Washington?');
+    console.log(stateLivedinQuestion);
+    if(statesLiveinArray){
+      i = 5;
+      alert('Correct');
+    }else{
+      alert('Keep Trying!');
+    }
   }
 }

@@ -2,9 +2,14 @@
 
 alert('Welcome to the guessing game where everything is made up and the points don\'t matter like the street signs to a cab driver!');
 var correctanswer = 0;
+var userName = '';
 
-var name = prompt('What is your name contestant?');
-console.log(name);
+function functionName() {
+  var name = prompt('What is your name contestant?');
+  console.log(name);
+  userName = name;
+}
+functionName();
 
 function backgroundpictureFunction() {
   var backgroundpicture = prompt('Is the background picture me?');
@@ -50,7 +55,7 @@ function climbFunction() {
 climbFunction();
 
 function occupationFunction() {
-  var occupation = prompt('Did I go to school to become a Physician?');
+  var occupation = prompt('Did I go to school to become a Physician Assistant?');
   console.log(occupation);
   if (occupation.toUpperCase() === 'YES' || occupation.toUpperCase() === 'Y'){
     correctanswer++;

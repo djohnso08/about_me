@@ -2,6 +2,7 @@
 
 alert('Welcome to the guessing game where everything is made up and the points don\'t matter like the street signs to a cab driver!');
 var correctanswer = 0;
+
 var userName = '';
 
 function functionName() {

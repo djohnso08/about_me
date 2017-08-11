@@ -10,14 +10,14 @@
 }
 
 #resume-html {
-  background-image: url("assets/seattle_skyline.jpg");
-   background-size: cover;
+  background-image: url("../assets/seattle_skyline.jpg");
+  background-size: cover;
 }
 
 /* GUESSING GAME */
 
 #guessing-game-html {
-  background-image: url(assets/diver.jpg);
+  background-image: url(../assets/diver.jpg);
     background-repeat: inherit;
     background-size: cover;
 }
@@ -74,8 +74,9 @@
 
 h1 {
   margin: 40px 0;
-  font-size: 30px;
-  font-weight: 300;
+  font-family: 'Indie Flower', cursive;
+  /*font-size: 30px;
+  font-weight: 300;*/
   text-align: center;
 }
 /*-----TRIPS----*/

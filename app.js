@@ -7,10 +7,12 @@ console.log(name);
 
 var backgroundpicture = prompt('Is the background picture me?');
 console.log(backgroundpicture);
-if (backgroundpicture.toLowerCase() === 'yes' || backgroundpicture.toLowerCase() === 'y') {
+if (backgroundpicture.toLowerCase() === 'yes' || backgroundpicture.toLowerCase() ===
+'y') {
   correctanswer++;
   alert('Yes you are correct! Your points are like American Express: PRICELESS.');
-} else if (backgroundpicture.toLowerCase() === 'no' || backgroundpicture.toLowerCase() === 'n') {
+} else if (backgroundpicture.toLowerCase() === 'no' || backgroundpicture.toLowerCase()
+=== 'n') {
   alert('Congratulations you recieve -1,000 points.');
 } else {
   alert('It\'s not to late to go back.');

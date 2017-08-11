@@ -39,7 +39,7 @@ if
   alert('ERORR ERROR ERORR');
 }
 
-var occupation = prompt('Did I go to school to become a Physician?');
+var occupation = prompt('Did I go to school to become a Physician Assistant?');
 console.log(occupation);
 if (occupation.toUpperCase() === 'YES' || occupation.toUpperCase() === 'Y'){
   correctanswer++;

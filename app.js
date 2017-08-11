@@ -12,7 +12,7 @@ function functionName() {
 }
 functionName();
 
-function backgroundpictureFunction() {
+function pictureQuestion() {
   var backgroundpicture = prompt('Is the background picture me?');
   console.log(backgroundpicture);
   if (backgroundpicture.toLowerCase() === 'yes' || backgroundpicture.toLowerCase() === 'y') {
@@ -24,23 +24,23 @@ function backgroundpictureFunction() {
     alert('It\'s not to late to go back.');
   }
 }
-backgroundpictureFunction();
+pictureQuestion();
 
-function schoolFunction() {
-  var school = prompt('Have I traveled to Dubai, Singapore, and Hawaii?');
+function travelQuestion() {
+  var travel = prompt('Have I traveled to Dubai, Singapore, and Hawaii?');
   console.log(school);
-  if(school.toUpperCase() === 'YES' || school.toUpperCase() === 'Y'){
+  if(travel.toUpperCase() === 'YES' || travel.toUpperCase() === 'Y'){
     correctanswer++;
     alert('So close, but I have traveled to Dubai and Singapore.');
-  } else if (school.toUpperCase() === 'NO' || school.toUpperCase() === 'N') {
+  } else if (travel.toUpperCase() === 'NO' || travel.toUpperCase() === 'N') {
     alert('You have been watching me haven\'t you!');
   } else{
     alert('Can\'t get away that easy!');
   }
 }
-schoolFunction();
+travelQuestion();
 
-function climbFunction() {
+function climbQuestion() {
   var climb = prompt('Have I climbed Mt. Rainer?');
   console.log(climb);
   if
@@ -50,12 +50,12 @@ function climbFunction() {
   } else if (climb.toLowerCase() === 'no' || climb.toLowerCase() === 'n') {
     alert('I used apple maps to get here! Congrats! 10,000 points.');
   } else{
-    alert('ERORR ERROR ERORR');
+    alert('ERROR ERROR ERROR');
   }
 }
-climbFunction();
+climbQuestion();
 
-function occupationFunction() {
+function occupationQuestion() {
   var occupation = prompt('Did I go to school to become a Physician Assistant?');
   console.log(occupation);
   if (occupation.toUpperCase() === 'YES' || occupation.toUpperCase() === 'Y'){
@@ -67,9 +67,9 @@ function occupationFunction() {
     alert('What kind of answer was that?');
   }
 }
-occupationFunction();
+occupationQuestion();
 
-function testFunction() {
+function testQuestion() {
   var terms = prompt('Have I ever clicked \"i agree\" on the terms and conditions, without reading it?');
   console.log(terms);
   if (terms.toLowerCase() === 'yes' || 'y'){
@@ -81,7 +81,7 @@ function testFunction() {
     alert('I guess you enjoy reading them too!');
   }
 }
-testFunction();
+testQuestion();
 
 function favoriteNumberFunction() {
   for (var i = 0; i < 4; i++) {

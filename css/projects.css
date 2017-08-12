@@ -4,13 +4,13 @@ body, html {
 }
 
 .bgimg {
-    background-image: url('assets/coming-soon.jpg');
+    background-image: url('../assets/coming-soon.jpg');
     height: 100%;
     background-position: center;
     background-size: cover;
     position: relative;
     color: white;
-    font-family: "Courier New", Courier, monospace;
+    font-family: "Courier New";
     font-size: 25px;
 }
 

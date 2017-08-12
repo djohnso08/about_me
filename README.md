@@ -1,2 +1,2 @@
 # about_me
-Code 201 Day 2 About Me assignment
+Code 201 Day 6 About Me assignment

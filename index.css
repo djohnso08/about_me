@@ -1,0 +1,65 @@
+.main-picture {
+  position: relative;
+  width: 10em;
+  right: 15%;
+}
+
+.nav {
+  position: fixed;
+    left: 50%;
+    width: 30em;
+    height: 18em;
+    margin-top: auto;
+    margin-left: -15em;
+}
+.nav ul {
+  list-style: none;
+  background-color: #444;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+.nav li {
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.2em;
+  line-height: 40px;
+  height: 40px;
+  border-bottom: 1px solid #888;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #fff;
+  display: block;
+  transition: .3s background-color;
+}
+
+.nav a:hover {
+  background-color: #005f5f;
+}
+
+.nav a.active {
+  background-color: #fff;
+  color: #444;
+  cursor: default;
+}
+
+.homepagebgimg {
+    /* Background image */
+    background-image: url('../assets/homepage.png');
+    /* Full-screen */
+    height: 100;
+    /* Center the background image */
+    background-position: inherit;
+    /* Scale and zoom in the image */
+    background-size: cover;
+    /* No repeating background */
+    background-repeat: no-repeat;
+    /* Add position: relative to enable absolutely positioned elements inside the image (place text) */
+    position: relative;
+    /* Add a white text color to all elements inside the .bgimg container */
+    color: white;
+    /* Add a font */
+    font-family: "Courier New", Courier, monospace;
+    /* Set the font-size to 25 pixels */
+    font-size: 25px;

@@ -1,4 +1,4 @@
-// 'use strict';
+'use strict';
 //
 // // Set the date we're counting down to
 // var countDown = new Date('Jan 5, 2018 15:37:25').getTime();

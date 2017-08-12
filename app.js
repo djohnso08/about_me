@@ -1,56 +1,30 @@
 'use strict';
 
-alert('Welcome to Whose Developer is this Anyway? The guessing game where everything is made up and the points don\'t matter like the street signs to a cab driver!');
+// Set the date we're counting down to
+var countDown = new Date('Jan 5, 2018 15:37:25').getTime();
 
-var hometown = prompt('I am David Johnson and I am your host for today\'s show!\nYour first question to get to know me is do you know where I grew up?');
-console.log(hometown + ' the conestant did/didn\'t know where David grew up.');
+// Update the count down every 1 second
+var x = setInterval(function() {
 
-if (hometown.toLowerCase() === 'yes' || hometown.toLowerCase() === 'y') {
-  alert('100,000 points due to your amazing ability to improvise and guess correctly.');
-} else if (hometown.toLowerCase() === 'no' || hometown.toLowerCase() === 'n') {
-  alert('Congratulations you recieve -1,000 points.');
-} else {
-  alert('Your answer is like American Express: PRICELESS.');
-}
+  // Get todays date and time
+  var todaysDate = new Date().getTime();
 
-var school = prompt('Has David attended all these schools?\nDiving\nFlight\nCoding\nFire Fighting');
-console.log(school + ' the contestant did/didn\'t know all the schools David attended.');
-if(school.toUpperCase() === 'YES' || school.toUpperCase() === 'Y'){
-  alert('I like bunnies too! Congrats! 9,9999.2 points.');
-} else if (school.toUpperCase() === 'NO' || school.toUpperCase() === 'N') {
-  alert('I would say NO if I was you too!');
-} else{
-  alert('Can\'t get away with it that easy!');
-}
+  // Find the distance between now an the count down date
+  var difference = countDown - todaysDate;
 
-var travel = prompt('Has David traveled to\nDubai\nSingapore\nGreece\nMexico');
-console.log(travel + ' David traveled to\nDubai\nSingapore\nGreece\nMexico');
-if
-(travel.toLowerCase() === 'yes' || travel.toLowerCase() === 'y'){
-  alert('I used apple maps to get here! Congrats! 10,000 points.');
-} else if (travel.toLowerCase() === 'no' || travel.toLowerCase() === 'n') {
-  alert('Whaaaaaaaat! 0 points!');
-} else{
-  alert('Look were you found yourelf now!');
-}
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-var occupation = prompt('Was I ever a ninja or a pirate?');
-console.log(occupation + ' he was/was not a ninja or pirate.');
-if (occupation.toUpperCase() === 'YES' || occupation.toUpperCase() === 'Y'){
-  alert('Arrrrrghhhhh! 0 points');
-} else if (occupation.toUpperCase() === 'NO' || occupation.toUpperCase() === 'N'){
-  alert('50 points! Now help me find my eye patch!');
-} else {
-  alert('So Close!');
-}
+  // Display the result in an element with id="demo"
+  document.getElementById('demo').innerHTML = days + ' d ' + hours + ' h '
+  + minutes + ' m ' + seconds + ' s ';
 
-var terms = prompt('Have I ever clicked \"i agree\" on the terms and conditions, without reading it?');
-console.log(terms + ' he has/has\'nt clicked \"i agree\" on the terms and conditions, without reading it.');
-if
-(terms.toLowerCase() === 'yes' || 'y'){
-  alert('You know I have! Haven\'t you!');
-} else if (terms.toLowerCase() === 'no' || terms.toLowerCase() === 'n'){
-  alert('I agreed anyway!');
-} else{
-  alert('I guess you enjoy reading them too');
-}
+  // If the count down is finished, write some text
+  if (difference < 0) {
+    clearInterval(x);
+    document.getElementById(' demo ').innerHTML = 'EXPIRED';
+  }
+}, 1000);

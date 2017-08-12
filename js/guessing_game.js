@@ -12,9 +12,9 @@ function contestant() {
 }
 contestant();
 
-function backgroundpicture() {
-  var diver = prompt('Is the background picture me?');
-  console.log(diver + ' it is/is not of me');
+function commercialdiver() {
+  var diver = prompt('Am I a diver?');
+  console.log(diver + ' i am/are not a diver.');
   if (diver.toLowerCase() === 'yes' || diver.toLowerCase() === 'y') {
     correctanswer++;
     alert('Yes you are correct! Your points are like American Express: PRICELESS.');
@@ -24,7 +24,7 @@ function backgroundpicture() {
     alert('It\'s not to late to go back.');
   }
 }
-backgroundpicture();
+commercialdiver();
 
 function travel() {
   var leisure = prompt('Have I traveled to Dubai, Singapore, and Greece?');
@@ -113,10 +113,10 @@ function Livedin() {
       break;
     }else if (!statesLive.includes(guessState)){
       alert('Keep Trying!');
-    }else{
-      alert('Nice Try! The states were ' + statesLive + '.' );
+    // }else{
+    //   alert('Nice Try! The states were ' + statesLive + '.' );
     }
   }
+  alert ('Congratulations ' + name + ' you got ' + correctanswer + ' of 7 right!');
 }
 Livedin();
-alert ('Congratulations ' + name + ' you got ' + correctanswer + ' of 7 right!');

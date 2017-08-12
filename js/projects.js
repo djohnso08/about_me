@@ -1,7 +1,7 @@
 'use strict';
 
 // Set the date we're counting down to
-var startDate = new Date('Jan 5, 2018 15:37:25').getTime();
+var startDate = new Date('Sep 1, 2017 18:00:00').getTime();
 
 // Update the count down every 1 second
 var countdown = setInterval(function() {
@@ -10,6 +10,7 @@ var countdown = setInterval(function() {
   var todaysDate = new Date().getTime();
 
 // Find the distance between now an the count down date  var distance = countDownDate - now;
+  var distance = startDate - todaysDate;
 
 // Time calculations for days, hours, minutes and seconds
   var days = Math.floor(distance / (1000 * 60 * 60 * 24));

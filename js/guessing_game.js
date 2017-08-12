@@ -5,73 +5,73 @@ var correctanswer = 0;
 
 var userName = '';
 
-function functionName() {
+function contestant() {
   var name = prompt('What is your name contestant?');
-  console.log(name);
+  console.log('Conestant\'s name is ' + name + '.');
   userName = name;
 }
-functionName();
+contestant();
 
-function backgroundpictureFunction() {
-  var backgroundpicture = prompt('Is the background picture me?');
-  console.log(backgroundpicture);
-  if (backgroundpicture.toLowerCase() === 'yes' || backgroundpicture.toLowerCase() === 'y') {
+function backgroundpicture() {
+  var diver = prompt('Is the background picture me?');
+  console.log(diver + ' it is/is not of me');
+  if (diver.toLowerCase() === 'yes' || diver.toLowerCase() === 'y') {
     correctanswer++;
     alert('Yes you are correct! Your points are like American Express: PRICELESS.');
-  } else if (backgroundpicture.toLowerCase() === 'no' || backgroundpicture.toLowerCase() === 'n') {
+  } else if (diver.toLowerCase() === 'no' || diver.toLowerCase() === 'n') {
     alert('Congratulations you recieve -1,000 points.');
   } else {
     alert('It\'s not to late to go back.');
   }
 }
-backgroundpictureFunction();
+backgroundpicture();
 
-function schoolFunction() {
-  var school = prompt('Have I traveled to Dubai, Singapore, and Hawaii?');
-  console.log(school);
-  if(school.toUpperCase() === 'YES' || school.toUpperCase() === 'Y'){
+function travel() {
+  var leisure = prompt('Have I traveled to Dubai, Singapore, and Greece?');
+  console.log(leisure + ' I have/haven\'t traveled to Dubai, Singapore, and Greece.');
+  if(leisure.toUpperCase() === 'YES' || leisure.toUpperCase() === 'Y'){
     correctanswer++;
-    alert('So close, but I have traveled to Dubai and Singapore.');
-  } else if (school.toUpperCase() === 'NO' || school.toUpperCase() === 'N') {
     alert('You have been watching me haven\'t you!');
+  } else if (leisure.toUpperCase() === 'NO' || leisure.toUpperCase() === 'N') {
+    alert('So close, but not quite right!');
   } else{
     alert('Can\'t get away that easy!');
   }
 }
-schoolFunction();
+travel();
 
-function climbFunction() {
-  var climb = prompt('Have I climbed Mt. Rainer?');
+function climb() {
+  var rainier = prompt('Have I climbed Mt. Rainier?');
   console.log(climb);
   if
-  (climb.toLowerCase() === 'yes' || climb.toLowerCase() === 'y'){
+  (rainier.toLowerCase() === 'yes' || rainier.toLowerCase() === 'y'){
     correctanswer++;
     alert('I must be the world\'s most interesting man, but no I have not climbed YET!');
-  } else if (climb.toLowerCase() === 'no' || climb.toLowerCase() === 'n') {
+  } else if (rainier.toLowerCase() === 'no' || rainier.toLowerCase() === 'n') {
     alert('I used apple maps to get here! Congrats! 10,000 points.');
   } else{
-    alert('ERORR ERROR ERORR');
+    alert('ERROR ERROR ERROR');
   }
 }
-climbFunction();
+climb();
 
-function occupationFunction() {
-  var occupation = prompt('Did I go to school to become a Physician Assistant?');
-  console.log(occupation);
-  if (occupation.toUpperCase() === 'YES' || occupation.toUpperCase() === 'Y'){
+function school() {
+  var physicianAssistant = prompt('Did I go to school to become a Physician Assistant?');
+  console.log(physicianAssistant + ' I did/did\'t go to school to become a Physician Assistant.');
+  if (physicianAssistant.toUpperCase() === 'YES' || physicianAssistant.toUpperCase() === 'Y'){
     correctanswer++;
     alert('I got your attention now didn\'t I! 35,000 points');
-  } else if (occupation.toUpperCase() === 'NO' || occupation.toUpperCase() === 'N'){
+  } else if (physicianAssistant.toUpperCase() === 'NO' || physicianAssistant.toUpperCase() === 'N'){
     alert('');
   } else {
     alert('What kind of answer was that?');
   }
 }
-occupationFunction();
+school();
 
-function testFunction() {
+function conditions() {
   var terms = prompt('Have I ever clicked \"i agree\" on the terms and conditions, without reading it?');
-  console.log(terms);
+  console.log(terms + 'have/have\'t clicked on the terms and conditions, without reading it?');
   if (terms.toLowerCase() === 'yes' || 'y'){
     correctanswer++;
     alert('Thank you for agreeing to the terms and conditions! 20,000 points');
@@ -81,40 +81,42 @@ function testFunction() {
     alert('I guess you enjoy reading them too!');
   }
 }
-testFunction();
+conditions();
 
-function favoriteNumberFunction() {
+function favoriteNumber() {
   for (var i = 0; i < 4; i++) {
-    var favoriteNumber = prompt('What is my favorite number?');
-    console.log(favoriteNumber);
-    if(parseInt(favoriteNumber) === 8){
+    var number = prompt('What is my favorite number?');
+    console.log('My favorite number is' + number);
+    if(parseInt(number) === 8){
       correctanswer++;
       i = 5;
       alert('Correct');
-    } else if (parseInt(favoriteNumber) < 8){
+    }else if (parseInt(number) < 8){
       alert('Too Low');
-    }else if (parseInt(favoriteNumber) > 8){
+    }else if (parseInt(number) > 8){
       alert('Too High');
     }else{
       alert('Now this time use a number.');
     }
   }
 }
-favoriteNumberFunction();
+favoriteNumber();
 
-function stateLivedinQuestionFunction() {
-  var statesLiveinArray = ['Arizona','Oklahoma','Oregon','Tennessee','Kansas','Virginia'];
+function Livedin() {
+  var statesLive = ['Arizona','Oklahoma','Oregon','Tennessee','Kansas','Virginia'];
   for (var i = 0; i < 6; i++) {
-    var stateLivedinQuestion = prompt('Can you guess a state that I have lived in besides Washington?');
-    console.log(stateLivedinQuestion);
-    if(statesLiveinArray.includes(stateLivedinQuestion)){
+    var guessState = prompt('Can you guess a state that I have lived in besides Washington?');
+    console.log('I have/haven\'t lived in' + guessState);
+    if(statesLive.includes(guessState)){
       correctanswer++;
       alert('Correct!');
       break;
-    } else {
+    }else if (!statesLive.includes(guessState)){
       alert('Keep Trying!');
+    }else{
+      alert('Nice Try! The states were ' + statesLive + '.' );
     }
   }
-  alert ('Congratulations ' + name + ' you got ' + correctanswer + ' of 7 right!');
 }
-stateLivedinQuestionFunction();
+Livedin();
+alert ('Congratulations ' + name + ' you got ' + correctanswer + ' of 7 right!');

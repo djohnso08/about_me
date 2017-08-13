@@ -9,7 +9,6 @@
 }
 
 /* GALLERY OF TRIPS */
-
 h1 {
   margin: 40px 0;
   font-family: 'Indie Flower', cursive;
@@ -30,7 +29,19 @@ h1 {
   width: 200px;
 }
 
-.gallery-trips > div:hover > img {
+/*.gallery-trips > div:hover > img {
+  transform: scale(1.7,1.7);
+  transition: .3s transform;
+}*/
+
+.clearfix {
+  clear: both;
+}
+
+#pictureDubai {
+  float: left;
+}
+#pictureDubai:hover {
   transform: scale(1.7,1.7);
   transition: .3s transform;
 }

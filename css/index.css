@@ -2,6 +2,7 @@
   position: inherit;;
   width: 10em;
   right: 15%;
+  border-radius: 100%;
 }
 
 .nav {
@@ -10,7 +11,8 @@
     width: 30em;
     height: 18em;
     margin-top: auto;
-    margin-left: -15em;
+    /*margin-left: -15em;*/
+    /*padding: 2%;*/
 }
 .nav ul {
   list-style: none;
@@ -58,4 +60,20 @@
     /* Add position: relative to enable absolutely positioned elements inside the image (place text) */
     position: relative;
   }
-}
+
+  table, th, td {
+      border: 2px solid white;
+      margin: 7em;
+  }
+
+  th {
+    background-color: grey;
+        color: white;
+        padding: 5px;
+    text-align: left;
+      }
+
+  td {
+    padding: 5px;
+        text-align: left;
+  }

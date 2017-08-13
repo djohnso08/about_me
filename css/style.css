@@ -11,15 +11,19 @@
 /* GALLERY OF TRIPS */
 h1 {
   margin: 40px 0;
-  font-family: 'Indie Flower', cursive;
-  /*font-size: 30px;
-  font-weight: 300;*/
+  font-family: 'Syncopate', cursive;
+  font-size: 60px;
+  font-weight: 100;
   text-align: center;
+}
+
+.titleGallery {
+  border: 10px solid black;
 }
 /*-----TRIPS----*/
 
 .gallery-trips {
-  margin: 0 auto;
+  margin: 10px auto;
   padding: 5px;
 }
 
@@ -42,6 +46,18 @@ h1 {
   float: left;
 }
 #pictureDubai:hover {
+  transform: scale(1.7,1.7);
+  transition: .3s transform;
+}
+#pictureLisbon:hover {
+  transform: scale(1.7,1.7);
+  transition: .3s transform;
+}
+#pictureGuam:hover {
+  transform: scale(1.7,1.7);
+  transition: .3s transform;
+}
+#pictureSingapore:hover {
   transform: scale(1.7,1.7);
   transition: .3s transform;
 }

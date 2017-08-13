@@ -1,4 +1,6 @@
 'use strict';
+window.setTimeout(function(){
+
 
 alert('Welcome to the guessing game where everything is made up and the points don\'t matter like the street signs to a cab driver!');
 var correctanswer = 0;
@@ -111,12 +113,13 @@ function Livedin() {
       correctanswer++;
       alert('Correct! The possible answers were ' + statesLive + '.');
       break;
-    }else if (!statesLive.includes(guessState)){
+    }if (!statesLive.includes(guessState)){
       alert('Keep Trying!');
-    }else
+    }else{
       alert('Nice Try! The states were ' + statesLive + '.' );
+    }
   }
+  alert (userName + ' you got ' + correctanswer + ' of 7 correct. Thanks for playing!');
 }
-//   // alert ('Congratulations ' + name + ' you got ' + correctanswer + ' of 7 right!');
-// }
-Livedin();
+  Livedin();
+},0);

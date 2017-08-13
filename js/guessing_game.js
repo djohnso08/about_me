@@ -109,14 +109,14 @@ function Livedin() {
     console.log('I have/haven\'t lived in' + guessState);
     if(statesLive.includes(guessState)){
       correctanswer++;
-      alert('Correct!');
+      alert('Correct! The possible answers were ' + statesLive + '.');
       break;
     }else if (!statesLive.includes(guessState)){
       alert('Keep Trying!');
-    // }else{
-    //   alert('Nice Try! The states were ' + statesLive + '.' );
-    }
+    }else
+      alert('Nice Try! The states were ' + statesLive + '.' );
   }
-  alert ('Congratulations ' + name + ' you got ' + correctanswer + ' of 7 right!');
 }
+//   // alert ('Congratulations ' + name + ' you got ' + correctanswer + ' of 7 right!');
+// }
 Livedin();

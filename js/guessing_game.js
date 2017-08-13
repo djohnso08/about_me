@@ -1,10 +1,7 @@
 'use strict';
-window.setTimeout(function(){
-
 
 alert('Welcome to the guessing game where everything is made up and the points don\'t matter like the street signs to a cab driver!');
 var correctanswer = 0;
-
 var userName = '';
 
 function contestant() {
@@ -13,7 +10,6 @@ function contestant() {
   userName = name;
 }
 contestant();
-
 function commercialdiver() {
   var diver = prompt('Am I a diver?');
   console.log(diver + ' i am/are not a diver.');
@@ -121,5 +117,4 @@ function Livedin() {
   }
   alert (userName + ' you got ' + correctanswer + ' of 7 correct. Thanks for playing!');
 }
-  Livedin();
-},0);
+Livedin();

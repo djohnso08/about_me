@@ -9,6 +9,16 @@
 }
 
 /* GALLERY OF TRIPS */
+
+#gallery-box {
+  background-image: url("../assets/gallery_of_trips.jpg");
+  height: 0;
+  background-position: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
 h1 {
   margin: 40px 0;
   font-family: 'Syncopate', cursive;

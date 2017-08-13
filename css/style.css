@@ -3,9 +3,9 @@
 
 #guessing-game-html {
   background-image: url("../assets/question_mark.jpg");
-    background-repeat: inherit;
-    background-size: cover;
-    background-repeat: no-repeat;
+  background-repeat: inherit;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 /* GALLERY OF TRIPS */
@@ -29,8 +29,7 @@ h1 {
 
 .titleGallery {
   border: 10px solid black;
-}
-/*-----TRIPS----*/
+  }
 
 .gallery-trips {
   margin: 10px auto;
@@ -41,12 +40,7 @@ h1 {
   display: block;
   padding-left: 2em;
   width: 200px;
-}
-
-/*.gallery-trips > div:hover > img {
-  transform: scale(1.7,1.7);
-  transition: .3s transform;
-}*/
+  }
 
 .clearfix {
   clear: both;

@@ -111,10 +111,10 @@ function Livedin() {
       break;
     }if (!statesLive.includes(guessState)){
       alert('Keep Trying!');
-    }else{
+    }else {
       alert('Nice Try! The states were ' + statesLive + '.' );
     }
+    alert (userName + ' you got ' + correctanswer + ' of 7 correct. Thanks for playing!');
   }
-  alert (userName + ' you got ' + correctanswer + ' of 7 correct. Thanks for playing!');
 }
 Livedin();

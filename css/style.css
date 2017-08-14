@@ -12,7 +12,7 @@
 
 #gallery-box {
   background-image: url("../assets/gallery_of_trips.jpg");
-  height: 0;
+  height: 100%;
   background-position: fixed;
   background-size: cover;
   background-repeat: no-repeat;
@@ -28,7 +28,7 @@ h1 {
 }
 
 .titleGallery {
-  border: 10px solid black;
+  border: 8px solid black
   }
 
 .gallery-trips {

@@ -11,7 +11,7 @@
 /* GALLERY OF TRIPS */
 
 #gallery-box {
-  background-image: url("../assets/trips.jpg");
+  background-image: url("../assets/scotland.jpg");
   height: 100%;
   background-position: fixed;
   background-size: cover;
@@ -20,7 +20,9 @@
 }
 
 p {
-  font-family: 'Pompiere', cursive;
+  font-family: 'Pompiere', ;
+ color:#d5e1ec;
+ margin:2%
 }
 
 h1 {

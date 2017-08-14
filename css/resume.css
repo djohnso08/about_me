@@ -1,26 +1,23 @@
 #informational {
   /*background-color: #a0c9d0;*/
-  background-color: rgba(124, 187, 197, 0.39);
+  background-color: rgba(124, 187, 197, 0.50);
   width: 15;
   padding: 0;
   text-align: center;
   border: 7px solid black;
   max-height: 1;
-  height: 44em;
-  margin: 0em;
+  height: 100%s;
+
   font-family: 'Coda', cursive;
   color: white;
 }
 
 #resume-html {
-  background-image: url("../assets/lightbulbresumephoto.jpg");
-  height: 0;
+   background-image: url("../assets/lightbulbresumephoto.jpg");
   background-position: fixed;
-  background-size: cover;
-  background-repeat: no-repeat;
+  background-size: contain;
   position: relative;
-
-}
+ }
 
 ul {
   list-style-type: none;

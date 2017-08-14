@@ -51,9 +51,9 @@
 
 .homepagebgimg {
   background-image: url('../assets/airport.jpg');
-  height: 0;
+  height: 100%;
   background-position: fixed;
-  background-size: cover;;
+  background-size: cover;
   background-repeat: no-repeat;
   position: relative;
 }
@@ -61,6 +61,7 @@
 table, th, td {
   border: 2px solid white;
   margin-left: 75%;
+  margin-bottom: 20%;
   right: 20em;
 }
 

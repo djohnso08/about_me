@@ -13,10 +13,7 @@
 }
 
 #resume-html {
-   background-image: url("../assets/lightbulbresumephoto.jpg");
-  /*background-position: fixed;
-  background-size: contain;
-  position: relative;*/
+  background-image: url("../assets/lightbulbresumephoto.jpg");
   height: 100%;
   background-position: fixed;
   background-size: cover;

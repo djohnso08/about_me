@@ -102,19 +102,27 @@ favoriteNumber();
 
 function Livedin() {
   var statesLive = ['Arizona','Oklahoma','Oregon','Tennessee','Kansas','Virginia'];
-  for (var i = 0; i < 6; i++) {
+  var counter = 0;
+  for (var i = 0; i < 6 ; i++) {
     var guessState = prompt('Can you guess a state that I have lived in besides Washington?');
     console.log('I have/haven\'t lived in' + guessState);
     if(statesLive.includes(guessState)){
+      counter = i;
       correctanswer++;
       alert('Correct! The possible answers were ' + statesLive + '.');
       break;
-    }if (!statesLive.includes(guessState)){
+    } else if (!statesLive.includes(guessState)){
+      counter = i;
       alert('Keep Trying!');
     }else {
+      counter = i;
       alert('Nice Try! The states were ' + statesLive + '.' );
     }
-    alert (userName + ' you got ' + correctanswer + ' of 7 correct. Thanks for playing!');
+  }
+  console.log(counter);
+  if (counter === 5 && !statesLive.includes(guessState)) {
+    alert('Nice Try! The states were ' + statesLive + '.' );
   }
 }
 Livedin();
+alert (userName + ' you got ' + correctanswer + ' of 7 correct. Thanks for playing!');

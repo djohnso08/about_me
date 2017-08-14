@@ -1,0 +1,78 @@
+.main-picture {
+  position: inherit;;
+  width: 10em;
+  right: 15%;
+  border-radius: 100%;
+  padding: 2em;
+}
+
+.nav {
+  position: relative;
+  min-width: 640px;
+  height: 32px;
+  padding: 0px;
+  margin: 0px;
+  width: 100%;
+}
+
+.nav ul {
+  list-style: none;
+  /*background-color: #444;*/
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  width: 200px;
+}
+
+.nav li {
+  font-family: 'Oswald'
+  font-size: 1.2em;
+  line-height: 40px;
+  height: 40px;
+  border-bottom: 1px solid #888;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #fff;
+  display: block;
+  transition: .3s background-color;
+}
+
+.nav a:hover {
+  background-color: #063858;
+}
+
+.nav a.active {
+  background-color: #fff;
+  color: #444;
+  cursor: default;
+}
+
+.homepagebgimg {
+  background-image: url('../assets/airport.jpg');
+  height: 100%;
+  background-position: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+table, th, td {
+  border: 2px solid white;
+  margin-left: 40%;
+  right: 20em;
+}
+
+th {
+  background-color: grey;
+  color: white;
+  padding: 5px;
+  text-align: left;
+}
+
+td {
+  padding: 5px;
+  text-align: left;
+  color: white;
+}

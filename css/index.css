@@ -25,7 +25,7 @@
 }
 
 .nav li {
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Oswald'
   font-size: 1.2em;
   line-height: 40px;
   height: 40px;
@@ -40,7 +40,7 @@
 }
 
 .nav a:hover {
-  background-color: #005f5f;
+  background-color: #063858;
 }
 
 .nav a.active {
@@ -60,8 +60,7 @@
 
 table, th, td {
   border: 2px solid white;
-  margin-left: 75%;
-  margin-bottom: 20%;
+  margin-left: 40%;
   right: 20em;
 }
 

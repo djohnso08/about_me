@@ -1,0 +1,73 @@
+
+/* GUESSING GAME */
+
+#guessing-game-html {
+  background-image: url("../assets/question_mark.jpg");
+  background-repeat: inherit;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* GALLERY OF TRIPS */
+
+#gallery-box {
+  background-image: url("../assets/scotland.jpg");
+  height: 100%;
+  background-position: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+p {
+  font-family: 'Pompiere', ;
+ color:#d5e1ec;
+ margin:2%
+}
+
+h1 {
+  margin: 40px 0;
+  font-family: 'Syncopate', cursive;
+  font-size: 60px;
+  font-weight: 100;
+  text-align: center;
+}
+
+.titleGallery {
+  border: 8px solid black
+  }
+
+.gallery-trips {
+  margin: 10px auto;
+  padding: 5px;
+}
+
+.gallery-trips > div > img {
+  display: block;
+  padding-left: 2em;
+  width: 200px;
+  }
+
+.clearfix {
+  clear: both;
+}
+
+#pictureDubai {
+  float: left;
+}
+#pictureDubai:hover {
+  transform: scale(1.7,1.7);
+  transition: .3s transform;
+}
+#pictureLisbon:hover {
+  transform: scale(1.7,1.7);
+  transition: .3s transform;
+}
+#pictureGuam:hover {
+  transform: scale(1.7,1.7);
+  transition: .3s transform;
+}
+#pictureSingapore:hover {
+  transform: scale(1.7,1.7);
+  transition: .3s transform;
+}

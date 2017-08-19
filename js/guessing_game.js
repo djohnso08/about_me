@@ -2,11 +2,7 @@
 
 alert('Welcome to the guessing game where everything is made up and the points don\'t matter like the street signs to a cab driver!');
 var correctanswer = 0;
-var userName = '';
-
-var name = prompt('What is your name contestant?');
-console.log('Conestant\'s name is ' + name + '.');
-userName = name;
+var name = prompt('What is your name contestant?'); console.log('Conestant\'s name is ' + name + '.');
 
 var diver = prompt('Am I a diver?');
 console.log(diver + ' i am/are not a diver.');
@@ -31,7 +27,7 @@ if(leisure.toUpperCase() === 'YES' || leisure.toUpperCase() === 'Y'){
 }
 
 var rainier = prompt('Have I climbed Mt. Rainier?');
-console.log(climb);
+console.log(rainier);
 if
 (rainier.toLowerCase() === 'yes' || rainier.toLowerCase() === 'y'){
   correctanswer++;
@@ -64,44 +60,37 @@ if (terms.toLowerCase() === 'yes' || 'y'){
   alert('I guess you enjoy reading them too!');
 }
 
-
 for (var i = 0; i < 4; i++) {
-    var number = prompt('What is my favorite number?');
-    console.log('My favorite number is' + number);
-    if(parseInt(number) === 8){
-      correctanswer++;
-      i = 5;
-      alert('Correct');
-    }else if (parseInt(number) < 8){
-      alert('Too Low');
-    }else if (parseInt(number) > 8){
-      alert('Too High');
-    }else{
-      alert('Now this time use a number.');
-    }
+  var number = prompt('What is my favorite number?');
+  console.log('My favorite number is' + number);
+  if(parseInt(number) === 8){
+    correctanswer++;
+    i = 5;
+    alert('Correct');
+  }else if (parseInt(number) < 8){
+    alert('Too Low');
+  }else if (parseInt(number) > 8){
+    alert('Too High');
+  }else{
+    alert('Now this time use a number.');
   }
-
-  var statesLive = ['arizona','oklahoma','oregon','tennessee','kansas','virginia'];
-  var counter = 0;
-  for (var i = 0; i < 6 ; i++) {
-    var guessState = prompt('Can you guess a state that I have lived in besides Washington?');
-    console.log('I have/haven\'t lived in' + guessState);
-    if(statesLive.includes(guessState.toLowerCase())){
-      counter = i;
-      correctanswer++;
-      alert('Correct! The possible answers were ' + statesLive + '.');
-      break;
-    } else if (!statesLive.includes(guessState.toLowerCase())){
-      counter = i;
-      alert('Keep Trying!');
-    }else {
-      counter = i;
-      alert('Nice Try! The states were ' + statesLive + '.' );
-    }
-  }
-  console.log(counter);
-  if (counter === 5 && !statesLive.includes(guessState.toLowerCase())) {
+}
+var statesLive = ['arizona','oklahoma','oregon','tennessee','kansas','virginia'];
+var counter = 0;
+for (var i = 0; i < 6 ; i++) {
+  var guessState = prompt('Can you guess a state that I have lived in besides Washington?');
+  console.log('I have/haven\'t lived in' + guessState);
+  if(statesLive.includes(guessState.toLowerCase())){
+    counter = i;
+    correctanswer++;
+    alert('Correct! The possible answers were ' + statesLive + '.');
+    break;
+  } else if (!statesLive.includes(guessState.toLowerCase())){
+    counter = i;
+    alert('Keep Trying!');
+  }else {
+    counter = i;
     alert('Nice Try! The states were ' + statesLive + '.' );
   }
 }
-alert (userName + ' you got ' + correctanswer + ' of 7 correct. Thanks for playing!');
+alert(name + ' you got ' + correctanswer + ' of 7 correct. Thanks for playing!');
